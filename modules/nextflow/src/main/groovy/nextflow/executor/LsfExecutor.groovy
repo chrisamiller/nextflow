@@ -160,9 +160,6 @@ class LsfExecutor extends AbstractGridExecutor {
         // see https://www.ibm.com/support/knowledgecenter/en/SSETD4_9.1.3/lsf_config_ref/lsf.conf.lsb_jobid_disp_length.5.html
         final result = ['bjobs', '-w']
 
-        if( queue )
-            result << '-q' << queue.toString()
-
         return result
     }
 
